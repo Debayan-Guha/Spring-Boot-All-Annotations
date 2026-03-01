@@ -54,7 +54,7 @@ public class CityController {
 	@DeleteMapping("/delete/{id}")
 	public String deleteCity(@PathVariable(name = "id") final Long cityId) {
 		cityService.deleteCity(cityId);
-		return "City Celeted..!!";
+		return "City deleted..!!";
 	}
 
 }
